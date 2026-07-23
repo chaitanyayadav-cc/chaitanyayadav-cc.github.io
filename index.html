@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chaitanya Yadav | Azure Data Engineer</title>
+<meta name="description" content="Portfolio of Chaitanya Yadav, Azure Data Engineer specializing in Azure Data Factory, Databricks, PySpark, Synapse, ADLS Gen2, Microsoft Fabric, SQL and Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080d;--panel:#0c111a;--panel2:#101722;--text:#edf4ff;--muted:#9aa8bc;--line:rgba(255,255,255,.09);--accent:#55b8ff;--accent2:#8d6bff;--glow:rgba(85,184,255,.22);--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 80% 0%,rgba(75,100,180,.16),transparent 32%),var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(6,8,13,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:20px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+.menu{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;padding:120px 0 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--glow);filter:blur(100px);right:-180px;top:130px;pointer-events:none}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-bottom:18px}
+h1{font-family:"Space Grotesk";font-size:clamp(48px,7vw,88px);line-height:1.02;letter-spacing:-4px;margin-bottom:22px}
+h1 span{background:linear-gradient(100deg,#fff 20%,#65c4ff 55%,#9b7cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h2{font-size:clamp(21px,3vw,31px);font-weight:600;margin-bottom:18px;color:#dce8f7}
+.hero p{max-width:680px;color:var(--muted);font-size:17px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 20px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:14px;transition:.25s}
+.btn.primary{background:linear-gradient(135deg,#55b8ff,#7667ff);border:0;color:#06101d;box-shadow:0 12px 35px rgba(85,184,255,.18)}
+.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.25)}
+.hero-card{position:relative;display:flex;justify-content:center}
+.photo-wrap{width:min(440px,80vw);aspect-ratio:4/5;border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 100px rgba(0,0,0,.55),0 0 70px var(--glow);background:#080a0e}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.92) contrast(1.04)}
+.badge{position:absolute;bottom:25px;left:0;background:rgba(12,17,26,.86);backdrop-filter:blur(14px);border:1px solid var(--line);padding:15px 18px;border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.3)}
+.badge strong{display:block;font-size:14px}.badge small{color:var(--muted)}
+section{padding:95px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}.kicker{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:12px}.section-head h2{font-family:"Space Grotesk";font-size:42px;line-height:1.1;margin-top:8px}.section-head p{max-width:530px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:22px;padding:28px}.panel p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.stat{padding:20px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.stat b{font-size:29px;font-family:"Space Grotesk";display:block}.stat span{font-size:12px;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.035);color:#cbd8e8;font-size:13px}
+.timeline{position:relative;padding-left:28px;border-left:1px solid var(--line)}.job{position:relative;padding:0 0 55px 26px}.job:before{content:"";position:absolute;left:-35px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 7px rgba(85,184,255,.1)}
+.job .date{color:var(--accent);font-size:13px;font-weight:700}.job h3{font-family:"Space Grotesk";font-size:27px;margin:5px 0}.job h4{color:#bdcbe0;font-size:15px;margin-bottom:13px}.job ul{padding-left:19px;color:var(--muted)}.job li{margin:8px 0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{padding:28px;border-radius:22px;background:linear-gradient(145deg,rgba(85,184,255,.09),rgba(255,255,255,.025));border:1px solid var(--line);position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-70px;background:rgba(118,103,255,.15);filter:blur(35px)}.project .num{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:2px}.project h3{font-family:"Space Grotesk";font-size:29px;margin:10px 0}.project p{color:var(--muted);margin-bottom:20px}.project ul{padding-left:18px;color:#c7d4e5}.project li{margin:8px 0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.tag{font-size:11px;padding:6px 9px;border-radius:8px;background:rgba(255,255,255,.06);color:#b8c8dc}
+.arch{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:center}.arch-item{padding:20px 12px;text-align:center;border:1px solid var(--line);border-radius:15px;background:var(--panel);font-size:13px;font-weight:700}.arrow{text-align:center;color:var(--accent);font-size:20px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{padding:35px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(85,184,255,.08),rgba(255,255,255,.02))}.contact-card h3{font-family:"Space Grotesk";font-size:30px;margin-bottom:10px}.contact-card p{color:var(--muted);margin-bottom:22px}.contact-links{display:grid;gap:10px}.contact-link{padding:13px 15px;border:1px solid var(--line);border-radius:12px;color:#cbd8e8}.contact-link:hover{border-color:var(--accent);color:white}
+footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:105px}.hero-card{order:-1}.photo-wrap{width:min(330px,75vw)}.about-grid,.projects,.contact{grid-template-columns:1fr}.arch{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.section-head{display:block}.section-head p{margin-top:14px}.stats{grid-template-columns:1fr}.footer{display:block}.footer div+div{margin-top:8px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#home">CY<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><button class="menu" onclick="toggleMenu()">☰</button></div></nav>
+
+<main>
+<section class="hero container" id="home">
+<div class="hero-copy reveal">
+<div class="eyebrow">Azure Data Engineer · Bangalore, India</div>
+<h1>Building data platforms that <span>scale.</span></h1>
+<h2>Chaitanya Yadav</h2>
+<p>Azure Data Engineer with 4+ years of hands-on experience designing scalable data pipelines, cloud data platforms, ETL/ELT workflows, lakehouse solutions, and analytics-ready data models across healthcare and insurance domains.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore My Work</a><a class="btn" href="mailto:chaitanya.yadav.cc@gmail.com">Let's Connect</a><a class="btn" href="https://www.linkedin.com/in/chenchu-chaitanya-yadav-chintha-3a7598237" target="_blank">LinkedIn ↗</a></div>
+</div>
+<div class="hero-card reveal"><div class="photo-wrap"><img src="profile.png" alt="Chaitanya Yadav"></div><div class="badge"><strong>4+ Years Experience</strong><small>Cloud Data Engineering · Azure Ecosystem</small></div></div>
+</section>
+
+<section id="about"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">01 · About</div><h2>Engineering data for impact.</h2></div><p>From ingestion to transformation, modeling, governance, and reporting, I build reliable data solutions designed for scale and business value.</p></div>
+<div class="about-grid">
+<div class="panel reveal"><p>I specialize in building modern data platforms on Microsoft Azure using Azure Data Factory, Azure Databricks, PySpark, Azure Synapse Analytics, ADLS Gen2, SQL, Python, and Microsoft Fabric. My experience spans batch and near-real-time processing, legacy ETL modernization, Bronze-Silver-Gold architectures, dimensional modeling, data quality, monitoring, and secure cloud data access.</p><div class="stats"><div class="stat"><b>4+</b><span>Years Experience</span></div><div class="stat"><b>2</b><span>Industry Projects</span></div><div class="stat"><b>Azure</b><span>Cloud Ecosystem</span></div></div></div>
+<div class="panel reveal"><div class="kicker">Core strengths</div><div class="skills"><span class="chip">ETL / ELT</span><span class="chip">Data Lake Architecture</span><span class="chip">Lakehouse</span><span class="chip">Dimensional Modeling</span><span class="chip">Data Quality</span><span class="chip">Pipeline Monitoring</span><span class="chip">Cloud Migration</span><span class="chip">Batch Processing</span><span class="chip">Near Real-Time Processing</span><span class="chip">Secure Data Access</span></div></div>
+</div></div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">02 · Technology Stack</div><h2>My engineering toolkit.</h2></div><p>A practical stack for building robust, maintainable, and analytics-ready cloud data solutions.</p></div>
+<div class="about-grid">
+<div class="panel reveal"><h3>Cloud & Data Platforms</h3><div class="skills"><span class="chip">Azure Data Factory</span><span class="chip">Azure Databricks</span><span class="chip">Azure Synapse Analytics</span><span class="chip">ADLS Gen2</span><span class="chip">Azure SQL</span><span class="chip">Azure Data Warehouse</span><span class="chip">Microsoft Fabric</span></div></div>
+<div class="panel reveal"><h3>Programming & Query</h3><div class="skills"><span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">T-SQL</span><span class="chip">SQL Server</span><span class="chip">SQL</span></div></div>
+<div class="panel reveal"><h3>BI & Reporting</h3><div class="skills"><span class="chip">Power BI</span><span class="chip">SSRS</span><span class="chip">Curated Data Models</span></div></div>
+<div class="panel reveal"><h3>ETL & Architecture</h3><div class="skills"><span class="chip">SSIS</span><span class="chip">Bronze-Silver-Gold</span><span class="chip">Delta Lake</span><span class="chip">Star Schema</span><span class="chip">Snowflake Schema</span><span class="chip">Incremental Loads</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">03 · Experience</div><h2>Professional journey.</h2></div><p>Delivering enterprise data engineering solutions at Exner Technologies across healthcare and insurance.</p></div>
+<div class="timeline">
+<div class="job reveal"><div class="date">JAN 2022 — PRESENT</div><h3>Azure Data Engineer</h3><h4>Exner Technologies</h4><ul><li>Designed and developed scalable ETL/ELT pipelines using Azure Data Factory and Azure Data Lake Storage Gen2.</li><li>Built transformation workflows with Azure Databricks and PySpark for large structured and semi-structured datasets.</li><li>Developed dimensional models and curated data platforms in Azure Synapse and Microsoft Fabric.</li><li>Implemented secure access using RBAC, managed identities, and Key Vault for sensitive data.</li><li>Monitored and troubleshot end-to-end pipelines, tuning workloads to meet daily and monthly SLA requirements.</li><li>Collaborated with business analysts, data architects, and domain stakeholders to deliver analytics and regulatory reporting solutions.</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">04 · Featured Projects</div><h2>Selected work.</h2></div><p>Real-world data engineering experience across healthcare and insurance analytics.</p></div>
+<div class="projects">
+<article class="project reveal"><div class="num">PROJECT 01 · HEALTHCARE</div><h3>Molina Healthcare</h3><p>Designed a scalable Azure data platform supporting healthcare analytics, operational reporting, care management, and regulatory use cases.</p><ul><li>Ingested member enrollment, claims, provider, and pharmacy data from on-premises and cloud sources into ADLS Gen2.</li><li>Built PySpark transformation workflows in Azure Databricks for cleansing, standardization, and aggregation.</li><li>Developed dimensional models and fact tables in Azure Synapse for claims and provider analytics.</li><li>Built lakehouse solutions in Microsoft Fabric as a unified reporting layer.</li><li>Applied RBAC, managed identities, and Key Vault for secure access to sensitive healthcare data.</li><li>Scheduled and monitored pipelines across ADF and Fabric to meet SLA requirements.</li></ul><div class="tags"><span class="tag">ADF</span><span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">Synapse</span><span class="tag">ADLS Gen2</span><span class="tag">Fabric</span></div></article>
+<article class="project reveal"><div class="num">PROJECT 02 · INSURANCE</div><h3>Aviva Insurance</h3><p>Built cloud data pipelines and curated analytical datasets for insurance policy, claims, customer, underwriting, and risk analytics.</p><ul><li>Designed end-to-end ADF pipelines to ingest data from multiple on-premises and cloud sources.</li><li>Built scalable Databricks and PySpark transformations to cleanse, standardize, and enrich datasets.</li><li>Optimized SQL Server stored procedures, views, and T-SQL for incremental loads and reconciliation.</li><li>Created Python-based data quality and exception frameworks for missing, duplicate, and inconsistent records.</li><li>Implemented Delta Lake architecture supporting ACID transactions and schema evolution.</li><li>Designed dimensional models for policy renewals, claims settlement, customer retention, and risk analysis.</li></ul><div class="tags"><span class="tag">ADF</span><span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">Python</span><span class="tag">SQL Server</span><span class="tag">Power BI</span></div></article>
+</div></div></section>
+
+<section><div class="container">
+<div class="section-head reveal"><div><div class="kicker">05 · Architecture</div><h2>From source to insight.</h2></div><p>A representative modern Azure data flow reflecting the engineering patterns used across projects.</p></div>
+<div class="arch reveal"><div class="arch-item">Source Systems</div><div class="arrow">→</div><div class="arch-item">ADF Ingestion</div><div class="arrow">→</div><div class="arch-item">ADLS Gen2<br>Bronze</div></div>
+<div class="arch reveal" style="margin-top:10px"><div class="arch-item">Databricks<br>PySpark</div><div class="arrow">→</div><div class="arch-item">Silver / Gold</div><div class="arrow">→</div><div class="arch-item">Synapse / Fabric</div></div>
+<div class="arch reveal" style="margin-top:10px"><div class="arch-item">Data Quality</div><div class="arrow">→</div><div class="arch-item">Monitoring</div><div class="arrow">→</div><div class="arch-item">Power BI / Reporting</div></div>
+</div></section>
+
+<section id="contact"><div class="container">
+<div class="contact"><div class="contact-card reveal"><div class="kicker">06 · Contact</div><h3>Let's build something data-driven.</h3><p>I'm open to conversations around Azure Data Engineering, cloud data platforms, modern ETL/ELT, lakehouse architecture, and analytics engineering.</p><a class="btn primary" href="mailto:chaitanya.yadav.cc@gmail.com">Email Me</a></div>
+<div class="contact-card reveal"><h3>Connect</h3><div class="contact-links"><a class="contact-link" href="mailto:chaitanya.yadav.cc@gmail.com">✉️ chaitanya.yadav.cc@gmail.com</a><a class="contact-link" href="tel:+917022522137">📞 +91 70225 22137</a><a class="contact-link" href="https://www.linkedin.com/in/chenchu-chaitanya-yadav-chintha-3a7598237" target="_blank">in LinkedIn Profile ↗</a><div class="contact-link">📍 Bangalore, Karnataka, India</div></div></div></div>
+</div></section>
+</main>
+<footer><div class="container footer"><div>© <span id="year"></span> Chaitanya Yadav. All rights reserved.</div><div>Azure Data Engineer · Cloud Data Platforms · Data Engineering</div></div></footer>
+<script>
+function toggleMenu(){const n=document.querySelector('.navlinks');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='72px';n.style.left='0';n.style.right='0';n.style.padding='20px';n.style.background='rgba(6,8,13,.96)';n.style.flexDirection='column'}
+document.getElementById('year').textContent=new Date().getFullYear();
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
